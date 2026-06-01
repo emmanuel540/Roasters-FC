@@ -40,7 +40,7 @@ export default function Homepage() {
   return (
     <div className="page-shell">
       <nav className="topnav">
-        <img src="/roasters-logo.png" alt="Roasters FC Logo" className="brand-logo" />
+        <img src="/roasters-fc-logo.png" alt="Roasters FC Logo" className="brand-logo" />
         <div className="nav-links">
           <a href="#home">Home</a>
           <a href="#about">About</a>
