@@ -1,20 +1,22 @@
-import { coach } from './data/teamData';
+import { coachingStaff } from './data/teamData';
 
 export default function CoachProfile() {
   return (
     <section className="section section-coach">
       <div className="section-header">
-        <h2>Coach Profile</h2>
-        <p>Learn more about the coach guiding Roasters FC through every season.</p>
+        <h2>Coaching Staff</h2>
+        <p>Meet the people behind the strategy, training, and matchday preparation at Roasters FC.</p>
       </div>
       <div className="coach-panel">
-        <div className="coach-card">
-          <div>
-            <h3>{coach.name}</h3>
-            <p className="coach-role">{coach.role}</p>
+        {coachingStaff.map((member) => (
+          <div key={member.name} className="coach-card">
+            <div>
+              <h3>{member.name}</h3>
+              <p className="coach-role">{member.role}</p>
+            </div>
+            <p>{member.experience}</p>
           </div>
-          <p>{coach.experience}</p>
-        </div>
+        ))}
       </div>
     </section>
   );

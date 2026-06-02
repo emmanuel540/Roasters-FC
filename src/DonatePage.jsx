@@ -22,7 +22,7 @@ export default function DonatePage() {
   return (
     <section className="section section-donate">
       <div className="section-header">
-        <h2>Be Apart Us</h2>
+        <h2>Be Apart Of Us</h2>
         <p>Join Roasters FC as a supporter, sponsor, or member and help us grow across every age group.</p>
       </div>
       <form className="donation-form" onSubmit={handleSubmit}>
@@ -64,7 +64,7 @@ export default function DonatePage() {
           rows="4"
         />
 
-        <button type="submit" className="button primary">Be Apart Us</button>
+        <button type="submit" className="button primary">Be Apart Of Us</button>
         {submitted && <p className="success-text">Thanks! We’ll be in touch soon.</p>}
       </form>
     </section>

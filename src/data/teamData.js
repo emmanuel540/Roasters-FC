@@ -33,8 +33,40 @@ export const playersByCategory = {
   ]
 };
 
-export const coach = {
-  name: 'Emmanuel Kadenge',
-  role: 'Founder & Head Coach',
-  experience: '7 seasons leading championship-challenged squads to victory and developing youth talent.'
-};
+export const coachingStaff = [
+  {
+    name: 'Emmanuel Kadenge',
+    role: 'Founder & Head Coach',
+    experience: '7 seasons leading championship-challenged squads to victory and developing youth talent.'
+  },
+  {
+    name: 'Victoria Kasyoka',
+    role: 'Assistant Coach',
+    experience: 'Supports weekly practice plans and player development across the squad.'
+  },
+  {
+    name: 'Reinhard Mutiso',
+    role: 'Assistant Coach',
+    experience: 'Focuses on tactical training and match preparation for the first team.'
+  },
+  {
+    name: 'Derrick Namboa',
+    role: 'Goalkeeping Coach',
+    experience: 'Specializes in goalkeeper technique, distribution, and shot-stopping drills.'
+  },
+  {
+    name: 'Halson Mwangi',
+    role: 'Midfield & Defence Coach',
+    experience: 'Develops transitional play and defensive organization across the team.'
+  },
+  {
+    name: 'Stanclous Lwaki',
+    role: 'Team Secretary',
+    experience: 'Manages team operations, communications, and logistics for every matchday.'
+  },
+  {
+    name: 'Felix Achira',
+    role: 'Technical Analyst',
+    experience: 'Provides match analysis, opponent scouting, and performance insights.'
+  }
+];

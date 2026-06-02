@@ -13,7 +13,7 @@ export default function Homepage() {
           </p>
           <div className="hero-actions">
             <Link className="button primary" to="/squad">Meet the Squad</Link>
-            <Link className="button primary" to="/be-apart-us">Be Apart Us</Link>
+            <Link className="button primary" to="/be-apart-us">Be Apart Of Us</Link>
           </div>
         </div>
         <div className="hero-panel hero-team-card">
