@@ -1,5 +1,10 @@
-import Homepage from './Homepage';
+import Layout from './components/layout/Layout';
+import HomePage from './pages/HomePage';
 
 export default function App() {
-  return <Homepage />;
+  return (
+    <Layout>
+      <HomePage />
+    </Layout>
+  );
 }

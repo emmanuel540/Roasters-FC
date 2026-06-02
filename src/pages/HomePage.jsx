@@ -1,16 +1,10 @@
 import { useState } from 'react';
+import HeroSection from '../components/sections/HeroSection';
+import PlayerCard from '../components/cards/PlayerCard';
+import StaffCard from '../components/cards/StaffCard';
+import { players, coach } from '../data/teams';
 
-const players = [
-  { name: 'Mason Vale', position: 'Forward', number: 9, description: 'Prolific striker with a sharp eye for goal.' },
-  { name: 'Jordan Cruz', position: 'Midfielder', number: 8, description: 'Creative playmaker who controls the tempo.' },
-  { name: 'Isaac Hart', position: 'Defender', number: 4, description: 'Reliable center-back with strong leadership.' }
-];
-
-const coach = {
-  name: 'Avery Brooks', role: 'Head Coach', experience: '7 seasons leading championship-challenged squads to victory.'
-};
-
-export default function Homepage() {
+export default function HomePage() {
   const [donationAmount, setDonationAmount] = useState('25');
   const [donorName, setDonorName] = useState('');
   const [donationSubmitted, setDonationSubmitted] = useState(false);
@@ -38,40 +32,8 @@ export default function Homepage() {
   };
 
   return (
-    <div className="page-shell">
-      <nav className="topnav">
-        <img src="/roasters-logo.png" alt="Roasters FC Logo" className="brand-logo" />
-        <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#about">About</a>
-          <a href="#players">Player Profile</a>
-          <a href="#coach">Coach Profile</a>
-          <a href="#donate">Donation</a>
-          <a href="#login">Login</a>
-        </div>
-      </nav>
-
-      <section id="home" className="hero-section">
-        <div className="hero-copy">
-          <span className="eyebrow">Welcome to Roasters FC</span>
-          <h1>Where passion, pride, and matchday energy unite.</h1>
-          <p>
-            Roasters FC is a competitive football club built on teamwork, local spirit, and a bold vision for the future.
-            Follow our season, meet the squad, and support the team on the path to victory.
-          </p>
-          <div className="hero-actions">
-            <a className="button primary" href="#players">Meet the Squad</a>
-            <a className="button secondary" href="#donate">Support the Club</a>
-          </div>
-        </div>
-        <div className="hero-panel hero-team-card">
-          <div>
-            <h2>Next Fixture</h2>
-            <p>Roasters FC vs. River City Rams</p>
-            <strong>Saturday • 5:30 PM • Home Stadium</strong>
-          </div>
-        </div>
-      </section>
+    <>
+      <HeroSection />
 
       <section id="about" className="section section-about">
         <div className="section-header">
@@ -101,14 +63,7 @@ export default function Homepage() {
         <h2>Player Profile</h2>
         <div className="profile-grid">
           {players.map((player) => (
-            <article key={player.name} className="profile-card">
-              <div className="profile-header">
-                <span className="profile-number">#{player.number}</span>
-                <h3>{player.name}</h3>
-              </div>
-              <p className="profile-position">{player.position}</p>
-              <p>{player.description}</p>
-            </article>
+            <PlayerCard key={player.name} player={player} />
           ))}
         </div>
       </section>
@@ -116,13 +71,7 @@ export default function Homepage() {
       <section id="coach" className="section section-coach">
         <div className="coach-panel">
           <h2>Coach Profile</h2>
-          <div className="coach-card">
-            <div>
-              <h3>{coach.name}</h3>
-              <p className="coach-role">{coach.role}</p>
-            </div>
-            <p>{coach.experience}</p>
-          </div>
+          <StaffCard staff={coach} />
         </div>
       </section>
 
@@ -186,6 +135,6 @@ export default function Homepage() {
           {loginStatus && <p className="login-status">{loginStatus}</p>}
         </form>
       </section>
-    </div>
+    </>
   );
 }
