@@ -12,15 +12,8 @@ export default function Homepage() {
             Follow our season, meet the squad, and support the team on the path to victory.
           </p>
           <div className="hero-actions">
-            <Link className="button primary" to="/squad">Meet the Squad</Link>
-            <Link className="button primary" to="/be-apart-us">Be Apart Of Us</Link>
-          </div>
-        </div>
-        <div className="hero-panel hero-team-card">
-          <div>
-            <h2>Next Fixture</h2>
-            <p>Roasters FC vs. River City Rams</p>
-            <strong>Saturday • 5:30 PM • Home Stadium</strong>
+            <Link className="button primary" to="/teams">Meet the Squad</Link>
+            <Link className="button primary" to="/contact">Get In Touch</Link>
           </div>
         </div>
       </section>

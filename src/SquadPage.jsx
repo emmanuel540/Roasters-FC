@@ -13,13 +13,13 @@ export default function SquadPage() {
         <article className="profile-card">
           <h3>Coaching Staff</h3>
           <p>Meet the coaches and staff who shape our teams on and off the pitch.</p>
-          <Link className="button secondary" to="/coach">View Coaches</Link>
+          <Link className="button secondary" to="/coaching-staff">View Coaches</Link>
         </article>
         {categories.map((cat) => (
           <article key={cat.id} className="profile-card">
             <h3>{cat.title}</h3>
             <p>{cat.description}</p>
-            <Link className="button primary" to={`/players/${cat.id}`}>View Players</Link>
+            <Link className="button primary" to={`/teams/${cat.id}`}>View Players</Link>
           </article>
         ))}
       </div>

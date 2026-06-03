@@ -18,12 +18,17 @@ export default function PlayerProfile() {
       <div className="section-header">
         <h2>{title}</h2>
         <p>{selectedCategory?.description || 'Meet the players for the selected category.'}</p>
-        <Link className="button secondary" to="/squad">Back to squad categories</Link>
+        <Link className="button secondary" to="/teams">Back to squad categories</Link>
       </div>
       <div className="profile-grid">
         {players.length === 0 && <p>No players found for this category yet.</p>}
-        {players.map((player) => (
+        {players.map((player, idx) => (
           <article key={player.name} className="profile-card">
+            <img 
+              src={`https://via.placeholder.com/200?text=${player.name.replace(/\s/g, '+')}`}
+              alt={player.name}
+              className="profile-image"
+            />
             <div className="profile-header">
               <span className="profile-number">#{player.number}</span>
               <h3>{player.name}</h3>
