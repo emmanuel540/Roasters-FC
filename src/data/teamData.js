@@ -1,3 +1,11 @@
+import emmanuelImg from './Coaching Staff/Emmanuel Kadenge - Founder & Head Coach.jpeg';
+import victoriaImg from './Coaching Staff/Victoria Kasyoka - Assistant Coach.jpeg';
+import reinhardImg from './Coaching Staff/Reinhard Mutiso - Assistant Coach.jpeg';
+import derrickImg from './Coaching Staff/Derrick Amboka - Goalkeeping Coach.jpeg';
+import alsonImg from './Coaching Staff/Alson Angaluki - Defending & Midfield Coach.jpeg';
+import stanclousImg from './Coaching Staff/Stanclous Lwaki - Team Secretary.jpeg';
+import felixImg from './Coaching Staff/Felix Achira - Technical Analyst.jpeg';
+
 export const categories = [
   {
     id: 'senior',
@@ -37,36 +45,46 @@ export const coachingStaff = [
   {
     name: 'Emmanuel Kadenge',
     role: 'Founder & Head Coach',
-    experience: '7 seasons leading championship-challenged squads to victory and developing youth talent.'
+    experience: '1 year of leading the team, guiding multiple squads, and building a legacy of excellence in youth talent development.',
+    image: emmanuelImg
   },
   {
     name: 'Victoria Kasyoka',
     role: 'Assistant Coach',
-    experience: 'Supports weekly practice plans and player development across the squad.'
+    experience: 'Supports weekly practice plans and player development across the squad.',
+    image: victoriaImg
   },
   {
     name: 'Reinhard Mutiso',
     role: 'Assistant Coach',
-    experience: 'Focuses on tactical training and match preparation for the first team.'
+    experience: 'Focuses on tactical training and match preparation for the first team.',
+    image: reinhardImg,
+    objectPosition: 'center 15%'
   },
   {
-    name: 'Derrick Namboa',
+    name: 'Derrick Amboka',
     role: 'Goalkeeping Coach',
-    experience: 'Specializes in goalkeeper technique, distribution, and shot-stopping drills.'
+    experience: 'Specializes in goalkeeper technique, distribution, and shot-stopping drills.',
+    image: derrickImg
   },
   {
-    name: 'Halson Mwangi',
-    role: 'Midfield & Defence Coach',
-    experience: 'Develops transitional play and defensive organization across the team.'
+    name: 'Alson Angaluki',
+    role: 'Defending & Midfield Coach',
+    experience: 'Develops transitional play and defensive organization across the team.',
+    image: alsonImg,
+    objectPosition: 'center 10%'
   },
   {
     name: 'Stanclous Lwaki',
     role: 'Team Secretary',
-    experience: 'Manages team operations, communications, and logistics for every matchday.'
+    experience: 'Manages team operations, communications, and logistics for every matchday.',
+    image: stanclousImg
   },
   {
     name: 'Felix Achira',
     role: 'Technical Analyst',
-    experience: 'Provides match analysis, opponent scouting, and performance insights.'
+    experience: 'Provides match analysis, opponent scouting, and performance insights.',
+    image: felixImg
   }
 ];
+

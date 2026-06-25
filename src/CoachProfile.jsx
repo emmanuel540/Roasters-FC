@@ -10,19 +10,21 @@ export default function CoachProfile() {
       <div className="profile-grid">
         {coachingStaff.map((member) => (
           <article key={member.name} className="profile-card">
+            <div className="profile-header-stacked">
+              <h3>{member.name}</h3>
+              <p className="profile-position">{member.role}</p>
+            </div>
             <img 
-              src={`https://via.placeholder.com/200?text=${member.name.replace(/\s/g, '+')}`}
+              src={member.image}
               alt={member.name}
               className="profile-image"
+              style={member.objectPosition ? { objectPosition: member.objectPosition } : undefined}
             />
-            <div className="profile-header">
-              <h3>{member.name}</h3>
-            </div>
-            <p className="profile-position">{member.role}</p>
-            <p>{member.experience}</p>
+            <p className="profile-experience">{member.experience}</p>
           </article>
         ))}
       </div>
     </section>
   );
 }
+

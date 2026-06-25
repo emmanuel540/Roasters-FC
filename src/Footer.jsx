@@ -8,7 +8,6 @@ export default function Footer() {
       <div className="footer-content">
         <div className="footer-section">
           <div className="footer-branding">
-            <img src="/roasters-fc-logo.png" alt="Roasters FC Logo" className="footer-logo" />
             <h3>Roasters FC</h3>
             <p>Building champions, nurturing futures.</p>
           </div>

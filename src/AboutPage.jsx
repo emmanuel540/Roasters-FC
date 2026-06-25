@@ -1,3 +1,5 @@
+import emmanuelImg from './data/Coaching Staff/Emmanuel Kadenge - Founder & Head Coach.jpeg';
+
 export default function AboutPage() {
   return (
     <section className="section section-about">
@@ -8,7 +10,7 @@ export default function AboutPage() {
           Our fans, players, and coaching staff share a single goal: build a club everyone can rally behind.
         </p>
       </div>
-      
+
       <div className="feature-grid team-values">
         <article className="feature-card">
           <h3>Our Mission</h3>
@@ -27,9 +29,9 @@ export default function AboutPage() {
       <div className="founder-section">
         <h2>Founder & Vision</h2>
         <div className="founder-profile">
-          <img 
-            src="https://via.placeholder.com/300?text=Emmanuel+Kadenge" 
-            alt="Emmanuel Kadenge, Founder & Head Coach" 
+          <img
+            src={emmanuelImg}
+            alt="Emmanuel Kadenge, Founder & Head Coach"
             className="founder-image"
           />
           <div className="founder-info">
@@ -37,10 +39,11 @@ export default function AboutPage() {
             <p className="founder-role">Founder & Head Coach</p>
             <p className="founder-bio">
               Emmanuel Kadenge founded Roasters FC with a vision to create a world-class football development program
-              rooted in community values. With over 7 seasons of coaching experience, Emmanuel has guided multiple squads
-              to championship victories while maintaining a deep commitment to youth talent development.
+              rooted in community values. With over 1 Year of Leading The Team, Emmanuel has guided multiple squads and builds a legacy of
+              excellence in youth talent development.
             </p>
-            <p>
+
+            <p className="founder-bio">
               His philosophy centers on building not just better footballers, but better people. Under his leadership,
               Roasters FC has become a beacon for aspiring young players seeking professional development with a personal touch.
             </p>
